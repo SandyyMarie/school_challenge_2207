@@ -17,7 +17,7 @@ class School
     end
 
     def is_full_time?
-        @hours_in_school_day >= 4
+        @hours_in_school_day > 4
     end
 
     def standard_student_names
@@ -27,9 +27,16 @@ class School
             cap_array << student.capitalize
         end
         cap_array
+
+        ## version with .map method
+        # @student_names.map {|student| student.capitalize}
     end
 
     def convert_end_time_to_clock_time
-        (end_time.to_i - 12).to_s + ":00"
+        if (end_time[0..1].to_i > 12)
+        (end_time[0..1].to_i - 12).to_s + ":" + end_time[3..4].to_s
+        else
+         end_time
+        end
     end
 end
