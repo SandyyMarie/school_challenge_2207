@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-07-07T11:02:02-06:00">2022-07-07T11:02:02-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-07-07T13:35:12-06:00">2022-07-07T13:35:12-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -73,7 +73,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#5b09a4de47a6ddde82cee8feb1414b4ef79606db" class="src_link" title="lib/school.rb">lib/school.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">33</td>
+            <td class="cell--number">36</td>
             <td class="cell--number">19</td>
             <td class="cell--number">19</td>
             <td class="cell--number">0</td>
@@ -142,12 +142,34 @@
 
             
 
-            <code class="ruby">    attr_reader :hours_in_school_day, :start_time, :student_names</code>
+            <code class="ruby">    attr_reader :hours_in_school_day, </code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="3">
+          <li class="never" data-hits="" data-linenumber="3">
+            
+            
+
+            
+
+            <code class="ruby">                :start_time, </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="4">
+            
+            
+
+            
+
+            <code class="ruby">                :student_names</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
             <span class="hits">1</span>
             
 
@@ -158,7 +180,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="12" data-linenumber="4">
+          <li class="covered" data-hits="12" data-linenumber="6">
             <span class="hits">12</span>
             
 
@@ -169,7 +191,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="12" data-linenumber="5">
+          <li class="covered" data-hits="12" data-linenumber="7">
             <span class="hits">12</span>
             
 
@@ -180,7 +202,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="12" data-linenumber="6">
+          <li class="covered" data-hits="12" data-linenumber="8">
             <span class="hits">12</span>
             
 
@@ -191,7 +213,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="7">
+          <li class="never" data-hits="" data-linenumber="9">
             
             
 
@@ -202,7 +224,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="8">
+          <li class="never" data-hits="" data-linenumber="10">
             
             
 
@@ -213,7 +235,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="9">
+          <li class="covered" data-hits="1" data-linenumber="11">
             <span class="hits">1</span>
             
 
@@ -224,7 +246,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="10">
+          <li class="covered" data-hits="6" data-linenumber="12">
             <span class="hits">6</span>
             
 
@@ -235,7 +257,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="11">
+          <li class="never" data-hits="" data-linenumber="13">
             
             
 
@@ -246,7 +268,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="12">
+          <li class="never" data-hits="" data-linenumber="14">
             
             
 
@@ -257,7 +279,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="13">
+          <li class="covered" data-hits="1" data-linenumber="15">
             <span class="hits">1</span>
             
 
@@ -268,57 +290,35 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="14">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">        (@start_time.to_i + @hours_in_school_day).to_s + &quot;:00&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="15">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
           <li class="never" data-hits="" data-linenumber="16">
             
             
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">        # require &#39;pry&#39; ; binding.pry</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="17">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="17">
+            <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">    def is_full_time?</code>
+            <code class="ruby">        (@start_time[0,1].to_i + @hours_in_school_day).to_s + &quot;:&quot; + start_time[2,3].to_s</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="18">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="18">
+            
             
 
             
 
-            <code class="ruby">        @hours_in_school_day &gt;= 4</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -329,18 +329,18 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="20">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="20">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">    def is_full_time?</code>
           </li>
         </div>
       
@@ -351,18 +351,18 @@
 
             
 
-            <code class="ruby">    def standard_student_names</code>
+            <code class="ruby">        @hours_in_school_day &gt;= 4</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="22">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="22">
+            
             
 
             
 
-            <code class="ruby">        cap_array = []</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -384,18 +384,18 @@
 
             
 
-            <code class="ruby">        @student_names.each do |student|</code>
+            <code class="ruby">    def standard_student_names</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="25">
-            <span class="hits">3</span>
+          <li class="covered" data-hits="1" data-linenumber="25">
+            <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">            cap_array &lt;&lt; student.capitalize</code>
+            <code class="ruby">        cap_array = []</code>
           </li>
         </div>
       
@@ -406,7 +406,7 @@
 
             
 
-            <code class="ruby">        end</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -417,18 +417,18 @@
 
             
 
-            <code class="ruby">        cap_array</code>
+            <code class="ruby">        @student_names.each do |student|</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="28">
-            
-            
-
+          <li class="covered" data-hits="3" data-linenumber="28">
+            <span class="hits">3</span>
             
 
-            <code class="ruby">    end</code>
+            
+
+            <code class="ruby">            cap_array &lt;&lt; student.capitalize</code>
           </li>
         </div>
       
@@ -439,7 +439,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">        end</code>
           </li>
         </div>
       
@@ -450,23 +450,12 @@
 
             
 
-            <code class="ruby">    def convert_end_time_to_clock_time</code>
+            <code class="ruby">        cap_array</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="31">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        (end_time.to_i - 12).to_s + &quot;:00&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="32">
+          <li class="never" data-hits="" data-linenumber="31">
             
             
 
@@ -477,7 +466,51 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="33">
+          <li class="never" data-hits="" data-linenumber="32">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="33">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    def convert_end_time_to_clock_time</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="34">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        (end_time.to_i - 12).to_s + &quot;:00&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="35">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="36">
             
             
 
